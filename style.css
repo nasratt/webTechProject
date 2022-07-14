@@ -77,6 +77,11 @@ nav a:visited {
 
 footer {
   height: 100px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 nav li {
