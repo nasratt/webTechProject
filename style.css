@@ -1,0 +1,225 @@
+:root {
+  --snow: #fbf5f3ff;
+  --morning-blue: #8daa9dff;
+  --dark-byzantium: #522b47ff;
+  --claret: #7b0828ff;
+  --smoky-black: #0f0e0eff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+input {
+  border-radius: 2px;
+  background-color: var(--snow);
+  height: 40px;
+  border: none;
+  padding: 10px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+a:link,
+a:active {
+  color: hotpink;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffc0cb;
+}
+
+.wrapper {
+  background-color: var(--smoky-black);
+  height: 100vh;
+}
+
+header {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+nav a,
+nav a:link,
+nav a:active,
+nav a:hover,
+nav a:visited {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.wlcmText {
+  text-align: center;
+  font-size: 60px;
+}
+
+footer {
+  height: 100px;
+}
+
+nav li {
+  font-size: 20px;
+  display: inline-block;
+  line-height: 90px;
+}
+
+.section_img {
+  height: calc(100% - 240px);
+  margin-top: 0px;
+  background-image: url('images/library.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 250px;
+  width: 500px;
+  background-color: black;
+  margin: 80px auto;
+  opacity: 0.75;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-----------------------student-login-----------------------*/
+.loginMain {
+  height: calc(100% - 140px);
+}
+
+.login_img {
+  height: 100%;
+  background-image: url('images/login_bgimg.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.studentLoginBox {
+  width: 450px;
+  background-color: #030002;
+  opacity: 0.6;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.studentLoginBox h1 {
+  margin-bottom: 25px;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blockInput {
+  width: 100%;
+}
+
+.btn {
+  background-color: var(--claret);
+  padding: 5px 10px;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  color: var(--snow);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.95;
+}
+
+.blockBtn {
+  width: 100%;
+}
+
+.help-links {
+  margin-top: 10px;
+}
+
+.help-links > * {
+  margin-bottom: 15px;
+}
+/*------------------student-registration-------------------------*/
+.regMain {
+  height: calc(100% - 140px);
+}
+
+.reg_img {
+  height: 100%;
+  background-image: url('images/test-reg.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.studentRegBox {
+  width: 900px;
+  background-color: #030002;
+  opacity: 0.6;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.studentRegBox h1 {
+  margin-bottom: 25px;
+}
+
+.regForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 20px;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .regForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px 20px;
+    align-items: center;
+  }
+
+  .studentRegBox {
+    width: 450px;
+    background-color: #030002;
+    opacity: 0.6;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+  }
+}
